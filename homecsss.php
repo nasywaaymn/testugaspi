@@ -144,14 +144,14 @@
   
             <div class="card-body">
              <button type="submit" class="btn btn-success" name="bsimpan">Simpan</button>
-			<button type="submit" class="btn btn-danger" name="breset">Reset</button>
+			<button type="submit" class="btn btn-warning" name="breset">Reset</button>
          </div>
      </div>
     </form>
   </div>
 </div>
 <!-- form daftara -->
-<div class="card mt-5">
+<div class="card mt-6">
   <div class="card-header bg-success text-white">
     	Daftar mahasiswa Yang Mendaftar
 	  </div>
