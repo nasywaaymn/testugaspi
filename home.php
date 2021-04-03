@@ -1,3 +1,17 @@
+<?php
+
+//database 
+
+	$server   = "localhost";
+	$user     = "root";
+	$pass	  = "";
+	$database = "tugass";
+	$koneksi  = mysqli_connect($server, $user , $pass , $database)or die(mysqli_error($koneksi));
+
+	//butoon untuk save
+
+?>
+
 
 <!DOCTYPE html>
 <html>
