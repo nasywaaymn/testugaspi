@@ -10,6 +10,65 @@
 
 	//butoon untuk save
 
+  if(isset($_POST['bsimpan']))
+  {
+    //untuk data diedit atau disimpan yang baru geng
+
+    if($_GET['hal'] == "edit")
+    {
+      //untuk edit
+
+      $edit  = mysqli_query($koneksi, "UPDATE tmhs set 
+                      nim = '$_POST[tnim]',
+                      nama = '$_POST[tnama]',
+                      alamat = '$_POST[talamat]',
+                      prodi  = '$_POST[tprodi]'WHERE id_mhs = '$_GET[id]'
+                       ");
+
+    
+    if($edit)
+    {
+      echo "<script>
+          alert('Edit Berhasil');
+          document.location='home.php';
+        </script>";
+    }
+    else 
+    {
+      echo "<script>
+          alert('Edit Gagal');
+          document.location='home.php';
+        </script>";
+    }
+
+    }else
+    {
+    }
+
+      //untuk penyimpanan baru
+
+    $simpan  = mysqli_query($koneksi, "INSERT INTO tmhs (nim , nama, alamat, prodi)
+                       VALUES ('$_POST[tnim]' , '$_POST[tnama]' , '$_POST[talamat]' , '$_POST[tprodi]')
+                       ");
+
+    //keterangan penyimpanan
+    if($simpan)
+    {
+      echo "<script>
+          alert('Pendaftaran Berhasil');
+          document.location='home.php';
+        </script>";
+    }
+    else 
+    {
+      echo "<script>
+          alert('Pendaftaran Gagal');
+          document.location='home.php';
+        </script>";
+    }
+    
+  }
+
 ?>
 
 
