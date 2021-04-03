@@ -183,7 +183,9 @@
 	 			</td>
 	 		</tr>
  <?php endwhile; ?>
+
  		</table>
 	<script type="text/javascript" src="js/bootstrap.min.js" ></script>
+</body>
 </body>
 </html>
