@@ -26,19 +26,7 @@
 										   ");
 
 		
-		if($edit)
-		{
-			echo "<script>
-					alert('Edit Berhasil');
-					document.location='home.php';
-				</script>";
-		}
-		else 
-		{
-			echo "<script>
-					alert('Edit Gagal');
-					document.location='home.php';
-				</script>";
+		
 		}
 
 		}else
